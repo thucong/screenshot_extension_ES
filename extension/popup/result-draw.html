@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension screenshot</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+
+  <body style="background: #F8F9FB">
+    <div class="row m-5" >
+      <div class="col-lg-8" >
+        <div class="border-result w-100 scroll-image" style="background: white;">
+          <canvas id="result-draw" style="border-radius: 8px"> </canvas>
+        </div>
+      </div>
+      <div class="col-lg-3 ml-5 border-ct">
+        <div class="grid-list-function">
+            <div class="flex-item download">
+              <i class="far fa-download" style="font-size: 25px;"></i>
+              <span class="fs-13">Download</span>
+            </div>
+            <div class="flex-item">
+              <i class="far fa-copy" style="font-size: 25px;"></i>
+              <span class="fs-13">Copy</span>
+            </div>
+            <div class="flex-item">
+              <i class="far fa-file-pdf" style="font-size: 25px;"></i>
+              <span class="fs-13">PDF</span>
+            </div>
+            <div class="flex-item">
+              <i class="far fa-print" style="font-size: 25px;"></i>
+              <span class="fs-13">Print</span>
+            </div>
+        </div>
+        <div class="border-content-save mt-4">
+          <h6 class="">Save to Extension Screenshot</h6>
+          <div class="border-signin mt-4 mb-4 ">
+            <div class="flex-cloud-upload">
+              <i class="far fa-cloud-upload mr-3" style="font-size: 25px;"></i>
+              <span style="font-size: 20px; font-weight: 700;">Auto backup with source URL</span>
+            </div>
+            <p class="fs-14">Auto save the image to cloud with the source URL! Like bookmark + screenshot!</p>
+            <button class="border-btn-gg w-100 " style="font-size: 15px; font-weight: 700;"><i class="fab fa-google mr-3" style="font-size: 20px;"></i>Sign in with Google</button>
+          </div>
+          <div>
+            <button class="border-btn-gg w-100" style="font-size: 18px; font-weight: 700;">Upload to get shareable link</button>
+          </div>
+        </div>
+        <div class="border-content-save mt-4">
+          <h6>Collaborate with Teammates</h6>
+          <button class="border-btn-gg w-100 mt-3">Connect with orther services</button>
+          <div class="text-center mt-3">
+            <span class="fs-13">Support:</span>&ensp;
+            <i class="fab fa-slack"></i> &ensp;
+            <i class="far fa-draw-circle"></i>&ensp;
+            <i class="fab fa-trello"></i>&ensp;
+            <i class="fab fa-github"></i>&ensp;
+            <i class="fab fa-jira"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="result-draw.js"></script>
+</html>

@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "My Extension",
+    "version": "1.0",
+    "icons": { "16": "icon.png",
+                "48": "icon.png",
+                "128": "icon.png" },
+    "description": "example about extension",
+    "browser_action": {
+        "default_icon": {               
+          "16": "icon.png",     
+          "24": "icon.png",     
+          "32": "icon.png"     
+        },
+        "default_title": "Extension ScreenShot",  
+        "default_popup": "popup/popup.html"    
+    },
+    "background": {
+		"scripts": [
+			"popup/background.js"
+		],
+        "persistent": true
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["popup/handle-capture.js"]
+		}
+	],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ]
+}
+  
+    

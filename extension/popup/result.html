@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension screenshot</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+
+  <body>
+      <div class="flex-navbar ">
+        <div style="width:20%"></div>
+        <div class="flex-tool">
+          <img src="./images/brush.svg" class="cursor draw"/>
+          <img src="./images/text.svg" class="cursor text"/>
+          <img src="./images/Rectangle 3.svg" class="cursor rectangle"/>
+          <img src="./images/Frame 29.svg" class="cursor"/>
+          <img src="./images/Frame 28.svg" class="cursor"/>
+          <i class="far fa-undo undo cursor"></i>
+          <i class="far fa-redo redo cursor"></i>
+          <div id="toolbar">
+            <label for="color" class="fs-13">Color</label>
+            <input id="color" name='color' type="color">
+          </div>
+        </div>
+        <div class="border-resize">
+          <img src="./images/Frame 22.svg" class="cursor"/>
+           <span class="fs-13">100% </span>
+           <img src="./images/Frame 21.svg" class="cursor"/>
+        </div>
+        <div>
+          <button class="border-btn-copy color-blue-marguerite fs-13">Copy</button>
+          <button class="border-btn-copy bg-blue-marguerite color-white fs-13 done ml-2">Done</button>
+        </div>
+      </div>
+
+    <div class="display-edit mt-3">
+      <div class="w-100">
+        <canvas id="result"> </canvas>
+      </div>
+    </div>
+  </body>
+  <script src="result.js"></script>
+</html>
